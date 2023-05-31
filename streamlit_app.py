@@ -49,4 +49,4 @@ streamlit.dataframe(my_data_rows)
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?', 'Jackfruit')
 streamlit.write('Thanks for adding', add_my_fruit, '!')
-fruits_to_show = my_fruit_list.loc[fruits_selected] + [add_my_fruit]
+fruits_to_show = my_fruit_list.loc[fruits_selected + add_my_fruit]
